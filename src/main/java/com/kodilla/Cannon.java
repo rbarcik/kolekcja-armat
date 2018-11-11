@@ -26,7 +26,7 @@ class Cannon{
     //checking. If Cannons are not loaded method load them.
     public static Cannon fire(Cannon cannonStatus){
 
-        if (cannonStatus.equals(new Cannon(false))) {
+        if (cannonStatus.getLoaded() == false) {
             System.out.println("No bullet in the Cannon ");
             System.out.println("Loading the Cannon");
         }
